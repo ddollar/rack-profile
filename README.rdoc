@@ -1,6 +1,22 @@
-= rack-profile
+= Rack::Profile
 
-Description goes here.
+Assists in profiling your rack application.
+
+== Installation
+
+ # install
+ $ gem source add http://gems.github.com
+ $ gem install ddollar-rack-profile
+
+ # add a use line to your builder
+ require 'rack/debug'
+ Rack::Builder.new do
+   use Rack::Profile, :html => '/tmp/profile.html'
+   run MyApp.new
+ end
+
+ # can specify any of three output types
+ use Rack::Profile, :html => 'profile.html', :text => 'profile.txt', :tree => 'profile.prof'
 
 == Copyright
 
