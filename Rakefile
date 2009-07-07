@@ -9,7 +9,8 @@ begin
     gem.email = "<ddollar@gmail.com>"
     gem.homepage = "http://github.com/ddollar/rack-profile"
     gem.authors = ["David Dollar"]
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+
+    gem.add_dependency('ruby-prof', ['= 0.7.3'])
   end
 
 rescue LoadError
