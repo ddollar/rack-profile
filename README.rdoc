@@ -18,6 +18,11 @@ Assists in profiling your rack application.
  # can specify any of three output types
  use Rack::Profile, :html => 'profile.html', :text => 'profile.txt', :tree => 'profile.prof'
 
+== Notes
+
+Each request will overwrite any previous request's profile output. This is sufficient for my
+current needs, but I welcome patches to deal with this more gracefully.
+
 == Copyright
 
 Copyright (c) 2009 David Dollar. See LICENSE for details.
