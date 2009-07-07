@@ -1,7 +1,7 @@
 require 'rack'
 require 'ruby-prof'
 
-class Rack::Debug
+class Rack::Profile
 
   attr_reader :app, :options
 
