@@ -25,7 +25,7 @@ class Rack::Profile
 private ######################################################################
 
   def write_output(results, type, klass)
-    if filename = options[:type]
+    if filename = options[type]
       File.open(filename, 'w') do |file|
         klass.new(results).print(file)
       end
