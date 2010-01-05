@@ -5,11 +5,10 @@ Assists in profiling your rack application.
 == Installation
 
  # install
- $ gem source add http://gems.github.com
- $ gem install ddollar-rack-profile
+ $ gem install rack-profile
 
  # add a use line to your builder
- require 'rack/debug'
+ require 'rack/profile'
  Rack::Builder.new do
    use Rack::Profile, :html => '/tmp/profile.html'
    run MyApp.new
